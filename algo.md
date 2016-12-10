@@ -59,6 +59,7 @@ Every 12 hours, create a snapshot of the database.
 
 ### Updating
  - Crawl every existing profile on the database, smallest clusters first.
+    - Except that if existing profile A adds/removes existing profile B in friend list, then do the same for profile B's friend list.
  - If any profile in a cluster connects with another profile in another cluster, merge them together.
 
 ## Pathfinding
